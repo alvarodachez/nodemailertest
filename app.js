@@ -12,5 +12,8 @@ app.post('/form', (req,res) => {
     res.status(200).send();
 })
 app.listen(process.env.PORT || 3000, ()=>{
-    console.log('Server running')
+    console.log('Server running');
+    if(process.env.PORT){
+        console.log(process.env.PORT);
+    }
 })
